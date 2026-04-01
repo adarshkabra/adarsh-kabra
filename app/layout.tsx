@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Strategy, AI, and GTM. Writing and projects by Adarsh Kabra.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
