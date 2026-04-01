@@ -61,7 +61,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/adarsh-kabra/" target="_blank" rel="noreferrer" className="social-pill">
             <span style={{ fontSize: 12 }}>in</span> LinkedIn
           </a>
-  <a href="https://github.com/" target="_blank" rel="noreferrer" className="social-pill">
+  <a href="https://github.com/adarshkabra/" target="_blank" rel="noreferrer" className="social-pill">
   <span>⌥</span> GitHub
 </a>
         </div>
