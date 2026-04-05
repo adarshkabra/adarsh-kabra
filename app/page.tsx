@@ -7,21 +7,32 @@ const posts = [
     title: 'Lessons from corporate life',
     date: 'Apr 2025',
     tag: 'Work',
-    excerpt: 'Seven years in. A few things I wish I had known earlier — and some I am still working on.',
+    icon: '📋',
+    excerpt: 'Seven years in. A few things I wish I had known earlier.',
   },
   {
     slug: 'how-ai-changes-gtm',
-    title: 'How AI is quietly reshaping the GTM playbook',
+    title: 'How AI is reshaping the GTM playbook',
     date: 'Mar 2025',
     tag: 'GTM',
-    excerpt: 'The sales motion is changing faster than most orgs realize. AI is starting to rewrite what GTM means.',
+    icon: '📈',
+    excerpt: 'AI is starting to rewrite what go-to-market means.',
   },
   {
     slug: 'on-strategy-in-startups',
-    title: 'What strategy actually means inside a 50-person startup',
+    title: 'What strategy means at a 50-person startup',
     date: 'Feb 2025',
     tag: 'Strategy',
-    excerpt: 'At a large firm, strategy means frameworks and decks. At a startup, it means deciding what not to do when everything feels urgent.',
+    icon: '🧭',
+    excerpt: 'Deciding what not to do when everything feels urgent.',
+  },
+  {
+    slug: 'ai-implementation-lessons',
+    title: 'Three things about enterprise AI nobody tells you',
+    date: 'Jan 2025',
+    tag: 'AI',
+    icon: '🤖',
+    excerpt: 'Patterns that keep showing up in every GenAI rollout.',
   },
 ]
 
@@ -36,7 +47,7 @@ const projects = [
   {
     emoji: '🏏',
     name: 'IPL Preview Agent',
-    desc: 'Pre-match analysis for IPL games — form, pitch, head-to-head.',
+    desc: 'Pre-match AI analysis for IPL — form, pitch, head-to-head.',
     tech: ['Groq', 'LLaMA 3.3'],
     href: '/projects',
   },
@@ -44,95 +55,125 @@ const projects = [
 
 export default function Home() {
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 32px' }}>
+    <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 28px' }}>
 
-      {/* HERO — compact, no separate nav */}
-      <section style={{ padding: '52px 0 48px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24, flexWrap: 'wrap', gap: 16 }}>
-          <h1 style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 'clamp(32px, 5vw, 44px)',
-            fontWeight: 500, color: '#1c1814',
-            lineHeight: 1.1, letterSpacing: '-0.02em',
-          }}>
-            Adarsh Kabra
-          </h1>
-          <div style={{ display: 'flex', gap: 24, alignItems: 'center', paddingTop: 6 }}>
-            <Link href="/now" style={{ fontSize: 13, color: '#afa89e', transition: 'color 0.15s' }}>Now</Link>
-            <Link href="/projects" style={{ fontSize: 13, color: '#afa89e' }}>Projects</Link>
-            <a href="https://github.com/adarshkabra" target="_blank" rel="noreferrer" style={{ fontSize: 13, color: '#afa89e' }}>GitHub</a>
-          </div>
-        </div>
-
-        <p style={{ fontSize: 15, color: '#6e6860', lineHeight: 1.6, marginBottom: 24, maxWidth: 480 }}>
+      {/* HERO — centered name */}
+      <section style={{ padding: '52px 0 36px', textAlign: 'center' }}>
+        <h1 style={{
+          fontFamily: "'Playfair Display', serif",
+          fontSize: 'clamp(36px, 5vw, 52px)',
+          fontWeight: 500, color: '#1c1814',
+          lineHeight: 1.1, letterSpacing: '-0.02em',
+          marginBottom: 10,
+        }}>
+          Adarsh Kabra
+        </h1>
+        <p style={{ fontSize: 15, color: '#6e6860', lineHeight: 1.6, marginBottom: 24 }}>
           Learning how businesses work. Building with AI to find out.
         </p>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-start', gap: 8, marginBottom: 28 }}>
-          <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block', marginTop: 8 }} />
-          <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block', marginTop: 8 }} />
-          <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block', marginTop: 8 }} />
-        </div>
-
-        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+        {/* Social links */}
+        <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
           <a href="mailto:adarshkabra@gmail.com" className="social-pill">✉ Email</a>
           <a href="https://www.linkedin.com/in/adarsh-kabra/" target="_blank" rel="noreferrer" className="social-pill">in LinkedIn</a>
+          <a href="https://github.com/adarshkabra" target="_blank" rel="noreferrer" className="social-pill">⌥ GitHub</a>
+        </div>
+
+        {/* Divider: line · dots · line */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
+          <div style={{ height: 1, background: '#e4dfd7', width: 80 }} />
+          <div style={{ display: 'flex', gap: 5 }}>
+            <span style={{ width: 3, height: 3, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block' }} />
+            <span style={{ width: 3, height: 3, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block' }} />
+            <span style={{ width: 3, height: 3, borderRadius: '50%', background: '#c4bdb4', display: 'inline-block' }} />
+          </div>
+          <div style={{ height: 1, background: '#e4dfd7', width: 80 }} />
         </div>
       </section>
 
-      {/* WRITING — full width, primary section */}
-      <section style={{ marginBottom: 72 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+      {/* WRITING — 2x2 grid */}
+      <section style={{ marginBottom: 48 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <p className="section-label" style={{ marginBottom: 0 }}>Writing</p>
           <Link href="/writing" style={{ fontSize: 12, color: '#afa89e' }}>All posts →</Link>
         </div>
 
-        <div style={{ borderTop: '1px solid #e4dfd7' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: 12,
+        }}>
           {posts.map(post => (
-            <Link key={post.slug} href={`/writing/${post.slug}`} className="post-row" style={{ display: 'block', padding: '20px 0', borderBottom: '1px solid #e4dfd7', transition: 'opacity 0.15s' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 16, marginBottom: 6 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <span className="tag">{post.tag}</span>
-                  <span style={{ fontSize: 12, color: '#c4bdb4' }}>{post.date}</span>
-                </div>
+            <Link key={post.slug} href={`/writing/${post.slug}`} style={{
+              background: '#fff',
+              border: '1px solid #e4dfd7',
+              borderRadius: 10,
+              padding: '18px 20px',
+              display: 'block',
+              transition: 'border-color 0.15s, box-shadow 0.15s',
+              textDecoration: 'none',
+            }}
+            className="project-card"
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
+                <span style={{
+                  fontSize: 22, lineHeight: 1,
+                  background: '#f5ede0',
+                  borderRadius: 7,
+                  padding: '6px',
+                  display: 'inline-block',
+                }}>
+                  {post.icon}
+                </span>
+                <span className="tag">{post.tag}</span>
               </div>
-              <p style={{ fontSize: 16, color: '#1c1814', fontWeight: 400, lineHeight: 1.4, marginBottom: 6 }}>
+              <p style={{
+                fontFamily: "'Playfair Display', serif",
+                fontSize: 15, fontWeight: 500,
+                color: '#1c1814', lineHeight: 1.35,
+                marginBottom: 6,
+              }}>
                 {post.title}
               </p>
-              <p style={{ fontSize: 13, color: '#9a9288', lineHeight: 1.6 }}>
+              <p style={{ fontSize: 12, color: '#9a9288', lineHeight: 1.5, marginBottom: 10 }}>
                 {post.excerpt}
               </p>
+              <span style={{ fontSize: 11, color: '#c4bdb4' }}>{post.date}</span>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* PROJECTS — below the fold */}
-      <section style={{ marginBottom: 80 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
+      {/* BUILT */}
+      <section style={{ marginBottom: 64 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <p className="section-label" style={{ marginBottom: 0 }}>Built</p>
           <Link href="/projects" style={{ fontSize: 12, color: '#afa89e' }}>All →</Link>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
           {projects.map(p => (
-            <Link key={p.name} href={p.href} className="project-card">
-              <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+            <Link key={p.name} href={p.href} className="project-card" style={{ display: 'block', textDecoration: 'none' }}>
+              <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <span style={{
                   fontSize: 22, lineHeight: 1,
                   background: '#f5ede0', borderRadius: 8,
-                  padding: '8px', flexShrink: 0,
+                  padding: '7px', flexShrink: 0,
                 }}>
                   {p.emoji}
                 </span>
-                <div style={{ minWidth: 0 }}>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, fontWeight: 500, color: '#1c1814', marginBottom: 3 }}>
+                <div>
+                  <p style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: 15, fontWeight: 500,
+                    color: '#1c1814', marginBottom: 4,
+                  }}>
                     {p.name}
                   </p>
-                  <p style={{ fontSize: 13, color: '#6e6860', lineHeight: 1.5, marginBottom: 10 }}>
+                  <p style={{ fontSize: 12, color: '#6e6860', lineHeight: 1.5, marginBottom: 10 }}>
                     {p.desc}
                   </p>
-                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
                     {p.tech.map((t: string) => <span key={t} className="tech-tag">{t}</span>)}
                   </div>
                 </div>
