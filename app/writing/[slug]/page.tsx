@@ -13,8 +13,7 @@ const posts: Record<string, {
     date: 'April 2025',
     tag: 'Work',
     readTime: '4 min',
-    content: `
-I have close to 7 years of work experience now. The points I am going to share below are nothing extraordinary, most of it you might already be aware of. I think it's helpful to bring these to the top of your memory once in a while though. Also I want to be upfront, some of these I still struggle with, so this is as much a reminder to myself as anything else.
+    content: `I have close to 7 years of work experience now. The points I am going to share below are nothing extraordinary, most of it you might already be aware of. I think it's helpful to bring these to the top of your memory once in a while though. Also I want to be upfront, some of these I still struggle with, so this is as much a reminder to myself as anything else.
 
 One more thing, I did not think about any of this when I was starting out. It's only as you get more tenured that you start noticing certain patterns, especially when you see younger folks make the same mistakes you made and you are like, oh, I did that too.
 
@@ -34,22 +33,21 @@ This one I genuinely still find hard. In consulting it is very common to put you
 
 For a long time I believed that if you do great work, recognition will follow on its own. I am not sure that's true. I have noticed colleagues getting staffed on interesting projects and thought, I would have been a good fit for that. But I had not reached out or spoken about what I was working on, so naturally I wasn't top of mind. There is no formal process where the best person gets selected, it's usually whoever the leader already knows and has been in touch with. Also, a side benefit nobody really talks about, when you are out there having these conversations, you also get to hear what others are working on, where new things are happening, which opens up opportunities you wouldn't have even known existed otherwise. So please don't be shy. It's not bragging, it's just how things actually work.
 
-These are 4 lessons in 7 years, will probably write part 2 to this in 14 years :)
-    `.trim()
+These are 4 lessons in 7 years, will probably write part 2 to this in 14 years :)`
   },
   'how-ai-changes-gtm': {
     title: 'How AI is quietly reshaping the GTM playbook',
     date: 'March 2025',
     tag: 'GTM',
     readTime: '5 min',
-    content: `Coming soon.`
+    content: 'Coming soon.'
   },
   'on-strategy-in-startups': {
     title: 'What strategy actually means inside a 50-person startup',
     date: 'February 2025',
     tag: 'Strategy',
     readTime: '4 min',
-    content: `Coming soon.`
+    content: 'Coming soon.'
   },
 }
 
@@ -81,8 +79,9 @@ function renderContent(content: string) {
   })
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = posts[params.slug]
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = posts[slug]
 
   if (!post) {
     return (
@@ -95,15 +94,11 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div style={{ maxWidth: 680, margin: '0 auto', padding: '0 32px' }}>
-
-      {/* Back link */}
       <div style={{ padding: '32px 0 0' }}>
         <Link href="/" style={{ fontSize: 13, color: '#afa89e', display: 'inline-flex', alignItems: 'center', gap: 6 }}>
           ← Adarsh Kabra
         </Link>
       </div>
-
-      {/* Header */}
       <header style={{ padding: '40px 0 40px', borderBottom: '1px solid #e4dfd7' }}>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 16 }}>
           <span className="tag">{post.tag}</span>
@@ -119,12 +114,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           {post.title}
         </h1>
       </header>
-
-      {/* Content */}
       <article style={{ padding: '40px 0 80px' }}>
         {renderContent(post.content)}
       </article>
-
     </div>
   )
 }
