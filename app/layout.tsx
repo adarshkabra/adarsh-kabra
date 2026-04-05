@@ -4,24 +4,14 @@ import React from 'react'
 
 export const metadata = {
   title: 'Adarsh Kabra',
-  description: 'Strategy, AI, and GTM. Writing and projects by Adarsh Kabra.',
+  description: 'Learning how businesses work. Building with AI to find out.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <header className="site-header">
-          <nav className="site-nav">
-            <Link href="/" className="nav-logo">Adarsh Kabra</Link>
-            <div className="nav-links">
-              <Link href="/writing" className="nav-link">Writing</Link>
-              <Link href="/projects" className="nav-link">Projects</Link>
-              <Link href="/now" className="nav-link">Now</Link>
-            </div>
-          </nav>
-        </header>
-        <main style={{ minHeight: 'calc(100vh - 130px)' }}>{children}</main>
+        <main>{children}</main>
         <footer className="site-footer">
           <div className="footer-inner">
             <span className="footer-copy">© {new Date().getFullYear()} Adarsh Kabra</span>
