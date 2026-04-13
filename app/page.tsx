@@ -53,6 +53,7 @@ const projects = [
   },
 ]
 
+
 export default function Home() {
   return (
     <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 28px' }}>
