@@ -59,8 +59,9 @@ export async function generateStaticParams() {
 
 
 
-export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
+export default async function PostPage(props: any) {
+  const params = await props.params
+  const slug = params?.slug || params?.default?.slug || Object.values(params || {})[0] || ''
   const post = posts[slug]
 
   if (!post) {
