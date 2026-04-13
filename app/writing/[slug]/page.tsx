@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 const posts: Record<string, {
   title: string
   date: string
@@ -59,9 +61,8 @@ export async function generateStaticParams() {
 
 
 
-export default async function PostPage(props: any) {
-  const params = await props.params
-  const slug = params?.slug || params?.default?.slug || Object.values(params || {})[0] || ''
+export default function PostPage(props: any) {
+  const slug = props.params?.slug
   const post = posts[slug]
 
   if (!post) {
