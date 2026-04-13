@@ -35,18 +35,57 @@ For a long time I believed that if you do great work, recognition will follow on
 
 These are 4 lessons in 7 years, will probably write part 2 to this in 14 years :)`
   },
-  'how-ai-changes-gtm': {
-    title: 'How AI is quietly reshaping the GTM playbook',
-    date: 'March 2025',
-    tag: 'GTM',
+  'confessions-of-a-cricket-addict': {
+    title: 'Confessions of a cricket addict',
+    date: 'April 2025',
+    tag: 'Personal',
     readTime: '5 min',
-    content: 'Coming soon.'
+    content: `I cared about cricket more than anything being taught in school. That tells you most of what you need to know about me.
+
+My first real memory of understanding what was actually going on in a game is the 2003 World Cup match against Pakistan. Sachin Tendulkar was batting unbelievably, upper cutting Shoaib Akhtar over third man like the man was bowling gentle medium pace. My family is not the kind that jumps around or screams, but they were deep in discussion every over, debating how India should negotiate Wasim, Waqar and Shoaib. Cricket had turned them into a bunch of unsolicited selectors. If I was ever put in charge of getting the next generation hooked on cricket, I would have picked this game.
+
+Growing up, the only way to check the score on a school day was to sneak over to the library where there was a television. If you were lucky, your library period fell during match time and you got 40 minutes of uninterrupted cricket. If not, you went during lunch break, got the score from the teacher, and relayed it to every interested kid in school. Good news travelled fast. Bad news also travelled fast, just with more silence.
+
+Let me explain what kind of fan you are dealing with. Cricket fans exist on a spectrum. On one end are people who tune in for big ICC tournaments and the IPL, know the top players, enjoy a win and move on from a loss. Then there are people who watch the big bilateral series and feel properly gutted when India loses. And then there is whatever I am. I have watched matches against Zimbabwe. I have stayed up until 4 AM for games against West Indies. I follow not just India but other big series around the world. If cricket is happening somewhere, there is a reasonable chance I am watching it.
+
+Most of the extreme stuff happened growing up and in college, which is my only defence. Here is a partial list, see how many you can relate to:
+
+**1. Watched an entire day of test cricket, 6 to 7 hours of television**
+
+**2. Watched a full 50 over one day game, close to 8 hours**
+
+**3. Stayed up until 4 AM for a game**
+
+**4. Woken up at 3:30 AM to watch an India New Zealand match**
+
+(Many do it for the Ashes, but a true cricket fan wakes up for New Zealand.)
+
+**5. Skipped school to watch a cricket game**
+
+**6. Tried to get an expert opinion published on ESPNCricinfo**
+
+**7. Skipped a social gathering to watch a match**
+
+I will also admit, not proudly, that results affect my mood. A win and the next morning feels lighter. A loss and there is a cloud. I have also developed the habit of dissociating from big games mid-way, telling myself I do not really care, which convinces nobody, least of all me.
+
+The other thing people find odd is how much cricket information I carry around in my head. Who bowled a crucial over in a 2007 knockout game, where the match was held, who was commentating. My general memory is terrible, I forget most things, but cricket data sits somewhere different, somewhere apparently permanent.
+
+Some of my best memories are not from watching alone. In college, hundreds of us would crowd around a screen, cheering every run and every wicket. There is a version of watching cricket alone that is also great, but the crowd version is a different sport entirely. Anyone who has been through that knows exactly what I mean.
+
+Sometimes I wonder how a silly game can take up this much space in a person's life. Then I watch a Kohli cover drive, or a Rohit pull shot, or a Bumrah yorker at the death, and I stop wondering. Yahi choti choti khushiyon ke liye toh aadmi jeeta hai.`
   },
   'on-strategy-in-startups': {
     title: 'What strategy actually means inside a 50-person startup',
     date: 'February 2025',
     tag: 'Strategy',
     readTime: '4 min',
+    content: 'Coming soon.'
+  },
+  'ai-implementation-lessons': {
+    title: 'Three things nobody tells you about enterprise AI implementation',
+    date: 'January 2025',
+    tag: 'AI',
+    readTime: '6 min',
     content: 'Coming soon.'
   },
 }
