@@ -48,6 +48,18 @@ These are 4 lessons in 7 years, will probably write part 2 to this in 14 years :
   },
 }
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'lessons-from-corporate-life' },
+    { slug: 'confessions-of-a-cricket-addict' },
+    { slug: 'on-strategy-in-startups' },
+    { slug: 'ai-implementation-lessons' },
+  ]
+}
+
+
+
+
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = posts[params.slug]
 
