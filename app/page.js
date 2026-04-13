@@ -11,12 +11,12 @@ const posts = [
     excerpt: 'Seven years in. A few things I wish I had known earlier.',
   },
   {
-    slug: 'how-ai-changes-gtm',
-    title: 'How AI is reshaping the GTM playbook',
-    date: 'Mar 2025',
-    tag: 'GTM',
-    icon: '📈',
-    excerpt: 'AI is starting to rewrite what go-to-market means.',
+    slug: 'confessions-of-a-cricket-addict',
+    title: 'Confessions of a cricket addict',
+    date: 'Apr 2025',
+    tag: 'Personal',
+    icon: '🏏',
+    excerpt: 'I cared about cricket more than anything being taught in school.',
   },
   {
     slug: 'on-strategy-in-startups',
@@ -57,7 +57,6 @@ export default function Home() {
   return (
     <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 28px' }}>
 
-      {/* HERO — centered name */}
       <section style={{ padding: '52px 0 36px', textAlign: 'center' }}>
         <h1 style={{
           fontFamily: "'Playfair Display', serif",
@@ -72,14 +71,12 @@ export default function Home() {
           Learning how businesses work. Building with AI to find out.
         </p>
 
-        {/* Social links */}
         <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
           <a href="mailto:adarshkabra@gmail.com" className="social-pill">✉ Email</a>
           <a href="https://www.linkedin.com/in/adarsh-kabra/" target="_blank" rel="noreferrer" className="social-pill">in LinkedIn</a>
           <a href="https://github.com/adarshkabra" target="_blank" rel="noreferrer" className="social-pill">⌥ GitHub</a>
         </div>
 
-        {/* Divider: line · dots · line */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}>
           <div style={{ height: 1, background: '#e4dfd7', width: 80 }} />
           <div style={{ display: 'flex', gap: 5 }}>
@@ -91,48 +88,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WRITING — 2x2 grid */}
       <section style={{ marginBottom: 48 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <p className="section-label" style={{ marginBottom: 0 }}>Writing</p>
           <Link href="/writing" style={{ fontSize: 12, color: '#afa89e' }}>All posts →</Link>
         </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 12,
-        }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
           {posts.map(post => (
-            <Link key={post.slug} href={`/writing/${post.slug}`} style={{
-              background: '#fff',
-              border: '1px solid #e4dfd7',
-              borderRadius: 10,
-              padding: '18px 20px',
-              display: 'block',
-              transition: 'border-color 0.15s, box-shadow 0.15s',
-              textDecoration: 'none',
-            }}
-            className="project-card"
-            >
+            <Link key={post.slug} href={`/writing/${post.slug}`} className="project-card" style={{ display: 'block', textDecoration: 'none' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
-                <span style={{
-                  fontSize: 22, lineHeight: 1,
-                  background: '#f5ede0',
-                  borderRadius: 7,
-                  padding: '6px',
-                  display: 'inline-block',
-                }}>
+                <span style={{ fontSize: 22, lineHeight: 1, background: '#f5ede0', borderRadius: 7, padding: '6px', display: 'inline-block' }}>
                   {post.icon}
                 </span>
                 <span className="tag">{post.tag}</span>
               </div>
-              <p style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 15, fontWeight: 500,
-                color: '#1c1814', lineHeight: 1.35,
-                marginBottom: 6,
-              }}>
+              <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, fontWeight: 500, color: '#1c1814', lineHeight: 1.35, marginBottom: 6 }}>
                 {post.title}
               </p>
               <p style={{ fontSize: 12, color: '#9a9288', lineHeight: 1.5, marginBottom: 10 }}>
@@ -144,7 +115,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BUILT */}
       <section style={{ marginBottom: 64 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <p className="section-label" style={{ marginBottom: 0 }}>Built</p>
@@ -155,19 +125,11 @@ export default function Home() {
           {projects.map(p => (
             <Link key={p.name} href={p.href} className="project-card" style={{ display: 'block', textDecoration: 'none' }}>
               <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-                <span style={{
-                  fontSize: 22, lineHeight: 1,
-                  background: '#f5ede0', borderRadius: 8,
-                  padding: '7px', flexShrink: 0,
-                }}>
+                <span style={{ fontSize: 22, lineHeight: 1, background: '#f5ede0', borderRadius: 8, padding: '7px', flexShrink: 0 }}>
                   {p.emoji}
                 </span>
                 <div>
-                  <p style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: 15, fontWeight: 500,
-                    color: '#1c1814', marginBottom: 4,
-                  }}>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, fontWeight: 500, color: '#1c1814', marginBottom: 4 }}>
                     {p.name}
                   </p>
                   <p style={{ fontSize: 12, color: '#6e6860', lineHeight: 1.5, marginBottom: 10 }}>
