@@ -136,7 +136,7 @@ export default function Home() {
                     {p.desc}
                   </p>
                   <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
-                    {p.tech.map((t: string) => <span key={t} className="tech-tag">{t}</span>)}
+                  {p.tech.map((t) => <span key={t} className="tech-tag">{t}</span>)}
                   </div>
                 </div>
               </div>
