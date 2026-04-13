@@ -48,23 +48,7 @@ Growing up, the only way to check the score on a school day was to sneak over to
 
 Let me explain what kind of fan you are dealing with. Cricket fans exist on a spectrum. On one end are people who tune in for big ICC tournaments and the IPL, know the top players, enjoy a win and move on from a loss. Then there are people who watch the big bilateral series and feel properly gutted when India loses. And then there is whatever I am. I have watched matches against Zimbabwe. I have stayed up until 4 AM for games against West Indies. I follow not just India but other big series around the world. If cricket is happening somewhere, there is a reasonable chance I am watching it.
 
-Most of the extreme stuff happened growing up and in college, which is my only defence. Here is a partial list, see how many you can relate to:
-
-**1. Watched an entire day of test cricket, 6 to 7 hours of television**
-
-**2. Watched a full 50 over one day game, close to 8 hours**
-
-**3. Stayed up until 4 AM for a game**
-
-**4. Woken up at 3:30 AM to watch an India New Zealand match**
-
-(Many do it for the Ashes, but a true cricket fan wakes up for New Zealand.)
-
-**5. Skipped school to watch a cricket game**
-
-**6. Tried to get an expert opinion published on ESPNCricinfo**
-
-**7. Skipped a social gathering to watch a match**
+Most of the extreme stuff happened growing up and in college, which is my only defence. Here is a partial list, see how many you can relate to. Watched an entire day of test cricket, 6 to 7 hours of television. Watched a full 50 over one day game, close to 8 hours. Stayed up until 4 AM for a game. Woken up at 3:30 AM to watch an India New Zealand match — many do it for the Ashes, but a true cricket fan wakes up for New Zealand. Skipped school to watch a cricket game. Tried to get an expert opinion published on ESPNCricinfo. Skipped a social gathering to watch a match.
 
 I will also admit, not proudly, that results affect my mood. A win and the next morning feels lighter. A loss and there is a cloud. I have also developed the habit of dissociating from big games mid-way, telling myself I do not really care, which convinces nobody, least of all me.
 
@@ -118,9 +102,12 @@ function renderContent(content: string) {
   })
 }
 
-export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
-  const post = posts[slug]
+type Props = {
+  params: { slug: string }
+}
+
+export default function PostPage({ params }: Props) {
+  const post = posts[params.slug]
 
   if (!post) {
     return (
