@@ -59,14 +59,14 @@ export async function generateStaticParams() {
 
 
 
-
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = posts[params.slug]
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = posts[slug]
 
   if (!post) {
     return (
       <div style={{ maxWidth: 680, margin: '0 auto', padding: '80px 32px', textAlign: 'center' }}>
-        <p style={{ color: '#afa89e' }}>Post not found. Slug: {params.slug}</p>
+        <p style={{ color: '#afa89e' }}>Post not found. Slug: {slug}</p>
         <Link href="/" style={{ color: '#7c5c2e', fontSize: 14 }}>← Back home</Link>
       </div>
     )
