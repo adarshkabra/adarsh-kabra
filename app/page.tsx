@@ -17,23 +17,9 @@ const posts = [
     tag: 'Personal',
     icon: '🏏',
     excerpt: 'The 2003 World Cup match against Pakistan. Where it all began.',
-  },
-  {
-    slug: 'on-strategy-in-startups',
-    title: 'What strategy means at a 50-person startup',
-    date: 'Feb 2025',
-    tag: 'Strategy',
-    icon: '🧭',
-    excerpt: 'Deciding what not to do when everything feels urgent.',
-  },
-  {
-    slug: 'ai-implementation-lessons',
-    title: 'Three things about enterprise AI nobody tells you',
-    date: 'Jan 2025',
-    tag: 'AI',
-    icon: '🤖',
-    excerpt: 'Patterns that keep showing up in every GenAI rollout.',
-  },
+  }
+ 
+
 ]
 
 const projects = [
