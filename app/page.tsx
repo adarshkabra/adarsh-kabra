@@ -16,7 +16,7 @@ const posts = [
     date: 'Apr 2025',
     tag: 'Personal',
     icon: '🏏',
-    excerpt: 'The 2003 World Cup match against Pakistan. Where it all began.',
+    excerpt: '2003 World Cup. India vs Pakistan. Where it all began',
   }
  
 
