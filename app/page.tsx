@@ -78,7 +78,7 @@ export default function Home() {
       <section style={{ marginBottom: 48 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
           <p className="section-label" style={{ marginBottom: 0 }}>Writing</p>
-          <Link href="/writing" style={{ fontSize: 12, color: '#afa89e' }}>All posts →</Link>
+    
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
