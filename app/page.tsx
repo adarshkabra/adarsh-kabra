@@ -16,7 +16,7 @@ const posts = [
     date: 'Apr 2025',
     tag: 'Personal',
     icon: '🏏',
-    excerpt: 'I cared about cricket more than anything being taught in school.',
+    excerpt: 'The 2003 World Cup match against Pakistan. Where it all began.',
   },
   {
     slug: 'on-strategy-in-startups',
