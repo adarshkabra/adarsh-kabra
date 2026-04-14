@@ -29,14 +29,7 @@ const projects = [
     desc: 'AI movie recommender. Tell it your mood, it finds your next watch.',
     tech: ['Groq', 'LLaMA 3.3'],
     href: '/projects',
-  },
-  {
-    emoji: '🏏',
-    name: 'IPL Preview Agent',
-    desc: 'Pre-match AI analysis for IPL — form, pitch, head-to-head.',
-    tech: ['Groq', 'LLaMA 3.3'],
-    href: '/projects',
-  },
+  }
 ]
 
 
