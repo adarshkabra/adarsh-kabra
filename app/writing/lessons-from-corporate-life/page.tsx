@@ -9,7 +9,7 @@ export default function CorporateLife() {
       <header style={{ padding: '40px 0 40px', borderBottom: '1px solid #e4dfd7' }}>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 16 }}>
           <span className="tag">Work</span>
-          <span style={{ fontSize: 12, color: '#c4bdb4' }}>April 2026</span>
+          <span style={{ fontSize: 12, color: '#c4bdb4' }}>March 2026</span>
           <span style={{ fontSize: 12, color: '#c4bdb4' }}>· 4 min read</span>
         </div>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(28px, 5vw, 38px)', fontWeight: 500, color: '#1c1814', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
