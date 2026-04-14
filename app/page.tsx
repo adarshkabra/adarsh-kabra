@@ -5,7 +5,7 @@ const posts = [
   {
     slug: 'lessons-from-corporate-life',
     title: 'Lessons from corporate life',
-    date: 'Apr 2025',
+    date: 'March 2026',
     tag: 'Work',
     icon: '📋',
     excerpt: 'Seven years in. A few things I wish I had known earlier.',
@@ -13,7 +13,7 @@ const posts = [
   {
     slug: 'confessions-of-a-cricket-addict',
     title: 'Confessions of a cricket addict',
-    date: 'Apr 2025',
+    date: 'April 2026',
     tag: 'Personal',
     icon: '🏏',
     excerpt: '2003 World Cup. India vs Pakistan. Where it all began',
