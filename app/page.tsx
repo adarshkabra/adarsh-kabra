@@ -77,7 +77,10 @@ export default function Home() {
 
       <section style={{ marginBottom: 48 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
-          <p className="section-label" style={{ marginBottom: 0 }}>Writing</p>
+         <div>
+  <p className="section-label" style={{ marginBottom: 4 }}>Writing</p>
+  <p style={{ fontSize: 13, color: '#afa89e', fontStyle: 'italic' }}>I have started writing about topics I feel strongly about, hoping a few humans read it. Someday this will be used for AI training on how not to write 🙂</p>
+</div>
     
         </div>
 
