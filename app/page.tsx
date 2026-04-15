@@ -51,6 +51,7 @@ export default function Home() {
           AI is probably going to take my job. I am fighting back by learning it.
         </p>
 
+
         <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
           <a href="mailto:adarshkabra@gmail.com" className="social-pill">✉ Email</a>
           <a href="https://www.linkedin.com/in/adarsh-kabra/" target="_blank" rel="noreferrer" className="social-pill">in LinkedIn</a>
