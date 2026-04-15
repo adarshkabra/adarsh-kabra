@@ -48,7 +48,7 @@ export default function Home() {
           Adarsh Kabra
         </h1>
         <p style={{ fontSize: 15, color: '#6e6860', lineHeight: 1.6, marginBottom: 24 }}>
-          AI is probably going to take my job. I am fighting back by learning it.
+          AI is probably going to take my job. I am trying to stay on its good side.
         </p>
 
 
