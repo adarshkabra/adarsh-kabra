@@ -48,7 +48,7 @@ export default function Home() {
           Adarsh Kabra
         </h1>
         <p style={{ fontSize: 15, color: '#6e6860', lineHeight: 1.6, marginBottom: 24 }}>
-          Learning how businesses work. Building with AI to find out.
+          AI is probably going to take my job. I am fighting back by learning it.
         </p>
 
         <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
