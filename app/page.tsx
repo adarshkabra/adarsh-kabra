@@ -28,7 +28,7 @@ const projects = [
     name: 'CineMatch',
     desc: 'AI movie recommender. Tell it your mood, it finds your next watch.',
     tech: ['Groq', 'LLaMA 3.3'],
-    href: '/projects',
+    href: 'https://01cinematch.netlify.app',
   }
 ]
 
@@ -107,7 +107,7 @@ export default function Home() {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
           {projects.map(p => (
-            <Link key={p.name} href={p.href} className="project-card" style={{ display: 'block', textDecoration: 'none' }}>
+            <Link key={p.name} href={p.href} target="_blank" rel="noreferrer" className="project-card" style={{ display: 'block', textDecoration: 'none' }}>
               <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <span style={{ fontSize: 22, lineHeight: 1, background: '#f5ede0', borderRadius: 8, padding: '7px', flexShrink: 0 }}>
                   {p.emoji}
