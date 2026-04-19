@@ -101,7 +101,10 @@ export default function Home() {
 
       <section style={{ marginBottom: 64 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
-          <p className="section-label" style={{ marginBottom: 0 }}>Built</p>
+          <div>
+  <p className="section-label" style={{ marginBottom: 4 }}>Built</p>
+  <p style={{ fontSize: 13, color: '#6e6860', fontStyle: 'italic' }}>The AI era has brought out the Bob the Builder in me. Made with 2 teaspoons of prompts, 1 of DevTools, and a generous amount of Claude.</p>
+</div>
           
         </div>
 
