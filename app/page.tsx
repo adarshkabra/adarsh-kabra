@@ -29,6 +29,13 @@ const projects = [
     desc: 'AI movie recommender. Tell it your mood, it finds your next watch.',
     tech: ['Groq', 'LLaMA 3.3'],
     href: 'https://01cinematch.netlify.app',
+  },
+  {
+    emoji: '🔍',
+    name: 'JD Analyzer Agent',
+    desc: 'Drop a job link — get company intel, role breakdown, and a fit score. Built to stop doing this manually.',
+    tech: ['AI Agent'],
+    href: 'https://www.youtube.com/watch?v=YmJLhRrSRLI',
   }
 ]
 
