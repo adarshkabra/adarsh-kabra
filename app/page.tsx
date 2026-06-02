@@ -33,8 +33,8 @@ const projects = [
   {
     emoji: '🔍',
     name: 'JD Analyzer Agent',
-    desc: 'Drop a job link — get company intel, role breakdown, and a fit score. Built to stop doing this manually.',
-    tech: ['AI Agent'],
+    desc: 'Drop any job link and it pulls company intel, breaks down the role and generates a fit score for me.',
+    tech: ['Groq', 'Tavily'],
     href: 'https://www.youtube.com/watch?v=YmJLhRrSRLI',
   }
 ]
